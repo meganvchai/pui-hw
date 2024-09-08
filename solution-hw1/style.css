@@ -1,0 +1,177 @@
+/* global styling */
+img {
+    border: 2px solid;
+    border-color: black;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-weight: normal;
+    font-size: 20px;
+}
+
+h2 {
+    font-weight: normal;
+    font-size: 16px;
+}
+
+button {
+    background-color: yellow;
+    font-weight: bold;
+    padding: 8px 12px;
+    height: fit-content;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* navigation bar */
+.logo {
+    width: 200px;
+    border: none;
+}
+
+nav {
+    margin-bottom: 32px
+}
+
+hr {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-link {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: black;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+#current-page {
+    background-color: yellow;
+    font-weight: bold;
+}
+
+
+/* products page */
+.product {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    margin-bottom: 24px;
+}
+
+.product img {
+    width: 300px;
+}
+
+.product-name {
+    text-decoration: underline;
+    margin-bottom: 4px;
+}
+
+.product .price {
+    text-decoration: none;
+    margin-top: 0px;
+}
+
+.product:hover {
+    background-color: yellow;
+}
+
+.product:hover .product-name {
+    font-weight: bold;
+}
+
+
+/* shopping cart page */
+.cart-item img {
+    width: 150px;
+}
+
+.cart-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.remove {
+    font-weight: bold;
+    text-decoration: underline;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+.cart-item p {
+    text-align: center;
+}
+
+.cart-item .price {
+    font-size: 20px;
+    margin-top: 0px;
+}
+
+.cart-divider {
+    width: 500px;
+}
+
+.checkout {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkout .price {
+    font-size: 20px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+
+/* product detail page */
+select {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.customize-item img {
+    width: 400px;
+}
+
+.customize-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 200px;
+}
+
+.selections {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.detail-total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    font-weight: bold;
+}
