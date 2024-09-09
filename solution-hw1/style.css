@@ -9,24 +9,18 @@ a {
     color: black;
 }
 
-p {
-    margin-top: 0px;
-}
-
 h1 {
     font-weight: normal;
     font-size: 20px;
 }
 
-h2 {
+p {
+    margin-top: 0px;
+} 
+
+h2, h3 {
     font-weight: normal;
     font-size: 16px;
-    margin-bottom: 0px;
-}
-
-h3 {
-    font-weight: normal;
-    font-size: 15px;
     margin-bottom: 0px;
 }
 
@@ -177,6 +171,7 @@ select {
 .selections {
     margin-top: 32px;
     margin-bottom: 32px;
+    width: 100%;
 }
 
 .detail-total {
@@ -186,4 +181,8 @@ select {
     align-items: center;
     width: 100%;
     font-weight: bold;
+}
+
+.detail-total .price {
+    margin-bottom: 0px;
 }
