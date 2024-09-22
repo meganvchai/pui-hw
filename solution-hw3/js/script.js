@@ -39,7 +39,7 @@ const selectGlaze = document.getElementById('glazing-options');
 const selectPack = document.getElementById('pack-options');
 
 function createSelectOptions(optionsType, selectionElement, text, price) {
-    for (const i = 0; i < 4; i++) {
+    for (let i = 0; i < 4; i++) {
         const element = document.createElement('option');
         element.innerText = optionsType[i][text];
         element.value = optionsType[i][price];
