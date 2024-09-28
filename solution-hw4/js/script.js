@@ -1,21 +1,43 @@
-// URL params
+// Update detail page
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get("roll");
 
-const cart = [
-
-]
-
-const headerElement = document.querySelector('.header');
-headerElement.innerText = rollType + ' Cinnamon Roll'
+const headerElement = document.querySelector(".header");
+headerElement.innerText = rollType + " Cinnamon Roll";
 
 const rollImgFile = rolls[rollType].imageFile;
-const rollImage = document.getElementById('roll-image');
-rollImage.src = '../assets/products/' + rollImgFile;
+const rollImage = document.getElementById("roll-image");
+rollImage.src = "../assets/products/" + rollImgFile;
 
+
+// Store cart information
+const cart = [];
+
+class Roll {
+  constructor(rollType, rollGlazing, packSize, basePrice) {
+    this.type = rollType;
+    this.glazing = rollGlazing;
+    this.size = packSize;
+    this.basePrice = basePrice;
+  }
+}
+
+const addCartButton = document.getElementById("add-to-cart");
+addCartButton.addEventListener("click", function () {
+  const addRoll = new Roll(
+    rollType,
+    selectGlaze.value,
+    selectPack.value,
+    rollBasePrice
+  );
+  cart.push(addRoll);
+});
+
+
+// Display roll price and dropdowns
 const rollBasePrice = rolls[rollType].basePrice;
-displayPrice(rollBasePrice)
+displayPrice(rollBasePrice);
 
 const glazingOptions = [
   {
@@ -77,16 +99,14 @@ function displayPrice(priceToDisplay) {
 
 function priceChange() {
   const basePrice = rollBasePrice;
-  const glazingPriceChange = parseFloat(
-    document.getElementById("glazing-options").value
-  );
-  const packPriceChange = parseFloat(
-    document.getElementById("pack-options").value
-  );
+  const glazingPriceChange = parseFloat(selectGlaze.value);
+  const packPriceChange = parseFloat(selectPack.value);
 
   const priceToDisplay = (basePrice + glazingPriceChange) * packPriceChange;
   displayPrice(priceToDisplay);
 }
 
-document.getElementById("glazing-options").addEventListener("change", priceChange);
+document
+  .getElementById("glazing-options")
+  .addEventListener("change", priceChange);
 document.getElementById("pack-options").addEventListener("change", priceChange);
