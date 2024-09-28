@@ -3,7 +3,7 @@ const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get("roll");
 
-const headerElement = document.querySelector(".header");
+const headerElement = document.getElementById("detail-header");
 headerElement.innerText = rollType + " Cinnamon Roll";
 
 const rollImgFile = rolls[rollType].imageFile;
