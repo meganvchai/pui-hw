@@ -1,21 +1,21 @@
 const glazingOptions = [
-    {
-      glaze: "Keep original",
-      priceAdaptation: 0,
-    },
-    {
-      glaze: "Vanilla milk",
-      priceAdaptation: 0,
-    },
-    {
-      glaze: "Sugar milk",
-      priceAdaptation: 0,
-    },
-    {
-      glaze: "Double Chocolate",
-      priceAdaptation: 1.5,
-    },
-  ];
+  {
+    glaze: "Keep original",
+    priceAdaptation: 0,
+  },
+  {
+    glaze: "Vanilla milk",
+    priceAdaptation: 0,
+  },
+  {
+    glaze: "Sugar milk",
+    priceAdaptation: 0,
+  },
+  {
+    glaze: "Double Chocolate",
+    priceAdaptation: 1.5,
+  },
+];
   
 const packOptions = [
     {
@@ -66,6 +66,8 @@ function displayCartItem(roll) {
     const glazingType = roll.glazing;
     const pack = roll.size;
 
+    const removeBtn = clone.querySelector('.remove');
+
     console.log('rolltype' + rollType);
     console.log('glazingtype' + glazingType);
     console.log('pack: ' + pack);
@@ -89,7 +91,6 @@ function displayCartItem(roll) {
     clone.element = document.querySelector('.cart-item-wrapper');
     // totalPrice += rollPrice;
 
-    const removeBtn = clone.querySelector('.remove');
     removeBtn.addEventListener('click', function() {
         clone.element.remove();
         cart.delete(roll);

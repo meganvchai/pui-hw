@@ -106,7 +106,5 @@ function priceChange() {
   displayPrice(priceToDisplay);
 }
 
-document
-  .getElementById("glazing-options")
-  .addEventListener("change", priceChange);
-document.getElementById("pack-options").addEventListener("change", priceChange);
+selectGlaze.addEventListener("change", priceChange);
+selectPack.addEventListener("change", priceChange);
