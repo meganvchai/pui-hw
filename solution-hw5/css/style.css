@@ -43,6 +43,7 @@ button {
     font-weight: bold;
     padding: 10px 16px;
     height: fit-content;
+    cursor: pointer;
 }
 
 .content {
