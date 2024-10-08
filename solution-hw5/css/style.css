@@ -149,7 +149,6 @@ hr {
 
 .remove {
     text-decoration: underline;
-    margin-top: 8px;
     background-color: white;
     padding: 0px;
     border: none;
@@ -179,7 +178,7 @@ hr {
 
 .cart-item {
     width: 100%;
-    margin-bottom: 20px;
+    margin-bottom: 16px;
 }
 
 .image-description-price {
@@ -197,6 +196,10 @@ hr {
     width: 540px;
     justify-content: space-between;
     margin-bottom: 8px;
+}
+
+.cart-item-wrapper {
+    margin-bottom: 16px;
 }
 
 
