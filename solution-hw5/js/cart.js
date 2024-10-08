@@ -47,8 +47,8 @@ function displayCartItem(roll) {
 
   clone.querySelector(".roll-image").src =
     "../assets/products/" + rolls[rollType].imageFile;
-  clone.querySelector(".roll-image").alt = rollType + " cinnamon roll";
-  clone.querySelector(".roll-type").textContent = rollType;
+  clone.querySelector(".roll-image").alt = rollType + " Cinnamon Roll";
+  clone.querySelector(".roll-type").textContent = rollType + " Cinnamon Roll";
   clone.querySelector(".glazing-type").textContent = glazingType;
   clone.querySelector(".pack-size").textContent = pack;
   clone.querySelector(".price").textContent = "$" + rollPrice.toFixed(2);
