@@ -24,3 +24,42 @@ const rolls = {
         "imageFile": "strawberry-cinnamon-roll.jpg"
     }    
 };
+
+const glazingOptions = [
+    {
+      glaze: "Keep Original",
+      priceAdaptation: 0,
+    },
+    {
+      glaze: "Vanilla Milk",
+      priceAdaptation: 0,
+    },
+    {
+      glaze: "Sugar Milk",
+      priceAdaptation: 0,
+    },
+    {
+      glaze: "Double Chocolate",
+      priceAdaptation: 1.5,
+    },
+  ];
+  
+  const packOptions = [
+    {
+      packSize: "1",
+      priceAdaptation: 1,
+    },
+    {
+      packSize: "3",
+      priceAdaptation: 3,
+    },
+    {
+      packSize: "6",
+      priceAdaptation: 5,
+    },
+    {
+      packSize: "12",
+      priceAdaptation: 10,
+    },
+  ];
+  

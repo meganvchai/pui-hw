@@ -39,44 +39,6 @@ addCartButton.addEventListener("click", function () {
 const rollBasePrice = rolls[rollType].basePrice;
 displayPrice(rollBasePrice);
 
-const glazingOptions = [
-  {
-    glaze: "Keep original",
-    priceAdaptation: 0,
-  },
-  {
-    glaze: "Vanilla milk",
-    priceAdaptation: 0,
-  },
-  {
-    glaze: "Sugar milk",
-    priceAdaptation: 0,
-  },
-  {
-    glaze: "Double Chocolate",
-    priceAdaptation: 1.5,
-  },
-];
-
-const packOptions = [
-  {
-    packSize: "1",
-    priceAdaptation: 1,
-  },
-  {
-    packSize: "3",
-    priceAdaptation: 3,
-  },
-  {
-    packSize: "6",
-    priceAdaptation: 5,
-  },
-  {
-    packSize: "12",
-    priceAdaptation: 10,
-  },
-];
-
 const selectGlaze = document.getElementById("glazing-options");
 const selectPack = document.getElementById("pack-options");
 

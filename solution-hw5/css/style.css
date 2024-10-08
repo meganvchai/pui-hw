@@ -148,9 +148,11 @@ hr {
 }
 
 .remove {
-    font-weight: bold;
     text-decoration: underline;
     margin-top: 8px;
+    background-color: white;
+    padding: 0px;
+    border: none;
 }
 
 .cart-item .price {
