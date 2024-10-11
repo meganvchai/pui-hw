@@ -17,21 +17,22 @@ const original = new Roll("Original", "Sugar Milk", "1", rolls.Original.basePric
 
 const cart = new Set([apple, raisin, walnut, original]);
 
-function displayPrice(totalPrice) {
-  const calculatedTotal = document.querySelector("#calculated-total");
-  calculatedTotal.textContent = "$" + Math.max(0, totalPrice).toFixed(2);
-}
-
 let totalPrice = 0;
 
-function displayCartItem(roll) {
+function displayPrice(totalPrice) {
+  const calculatedTotal = document.querySelector("#calculated-total");
+  calculatedTotal.textContent = "$" + totalPrice.toFixed(2);
+}
 
+function displayCartItem(roll) {
   const template = document.querySelector(".cart-item");
   const clone = template.content.cloneNode(true);
 
   const rollType = roll.type;
   const glazingType = roll.glazing;
   const pack = roll.size;
+
+  console.log(rollType);
 
   const removeBtn = clone.querySelector(".remove");
 
