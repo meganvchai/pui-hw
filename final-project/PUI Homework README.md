@@ -125,76 +125,125 @@ Remember to keep track of your prompts and usage for [FP4 writeup](#part-6-gener
 
 ## Project Description
 
-Briefly restate your motivation and a short description of your project.
+A personal book recommendations website for my friends and family, including a list of 10 of my favorite books with a summary, my personal notes, and where to buy the book at a local bookstore.
 
 ## High-Fi Prototypes
 
 ### *Prototype 1*
 
-![title for prototype1](images/prototype1.png)
+![Homepage iteration 1](images/prototype1-v1.png)
 
-A brief description and summary of the user feedback (\<100 words, 2 images) 
+**Homepage:** Users can see a list of books I recommend and filter based on various, common book themes that I enjoy. Users can also hover on each row to see the corresponding image of the book cover appear and follow the cursor.
 
 ### *Prototype 2*
 
-…
+![Book detail page iteration 1](images/prototype2-v1.png)
+
+**Book detail page:** Users can see a more detailed list of themes explored in the book, along with my written short summary and notes on why I recommend this book.
+
+
+Summarizing the feedback I received, I mostly got notes about improving the filter/pill selection interaction and also the hover state interaction for the book list. Additionally, I got suggestions to have an additional action users can take after reading the book detail page, like where to buy it.
+
 
 ## Usability Test
 
-Discuss the user feedback you got during the evaluation / usability test (\~300 words). Indicate which feedback you implemented, inspired new directions, or otherwise influenced your final design. 
+*Discuss the user feedback you got during the evaluation / usability test (\~300 words). Indicate which feedback you implemented, inspired new directions, or otherwise influenced your final design.*
+
+I tasked users to go through the website and test the navigation to see what they would expect to happen. I also asked users to give suggestions on additional information they want to see on the website.
+
+One participant shared that her first instinct was to scroll and hover over elements to explore clickable options. She expected the entire row, including the text and "View" button, to change color on hover, while I only designed it to be able to click on the “View” button. I redesigned the hover interaction to change the background of the row to indicate affordance of the whole row. She also anticipated that filtering would completely narrow down the book list and that multiple selections could be made at once. From this feedback,I added the ability to make multiple selections to the pill filtering system from the homepage. Furthermore, she liked the personal notes and summary as a nice personal touch. However, she mentioned that the category pills too closely resembled the clickable pills on the homepage, so I made these unclickable pills a different color to differentiate the functionality. She also suggested adding a link to purchase the books directly, which I added at the bottom of the page.
+
+Another participant was unclear about where information of the book tags came from. She suggested the idea of animating the book in some way to add more interactivity on the book detail page, which I plan on implementing. Like the other participant, she also suggested including the book price and where to find it, so users wouldn’t have to leave the site to search elsewhere. Furthermore, she also discussed navigation, mentioning that she would prefer the entire row to be clickable (not just the "View" button), and that making the "View" button appear only on hover could reduce repetition. She liked the row highlight effect for the filter interaction and felt it was effective to categorize the different books in the list. 
+
 
 ## Updated Designs
 
 Show screenshots of your updated design based on the user feedback (\<100 words, \~2 images).
 
+![Homepage iteration 2](images/prototype1-v2.png)
+
+**Homepage:** To increase user freedom and flexibility of selecting different filters, I replaced the individual pill filters with a multi-select interaction, allowing users to filter the book list more easily. I implemented a hover effect where the row background changes to visually indicate that the row is clickable. Additionally, to reduce repetition and streamline the interface, I made the "View" button appear only when the cursor hovers over a row, rather than having it constantly visible.
+
+![Book detail page iteration 2](images/prototype2-v2.png)
+
+**Book detail page:** I added links to Goodreads and a local bookstore for each book, providing users with actionable next steps to learn more or purchase the book.
+
 ## Feedback Summary
 
-Summarize the feedback you received in the lab session and discuss how it influenced your design (\~300 words). 
+*Summarize the feedback you received in the lab session and discuss how it influenced your design (\~300 words).*
+
+The feedback I received from my classmates during the lab session provided good insights on how I can improve the interactions on my website so that it’s more intuitive and usable. Furthermore, people also suggested helpful ways to improve the overall functionality of my website so that it is more useful for users who land on this website. 
+
+For website interactions, one classmate noted that because the book cover image immediately following the cursor makes the cursor feel too large and obstructs the view, they suggested resizing it to improve usability. Another suggestion was to change the cursor hover interaction into a small motif from the book. Several classmates liked the personalized tags and multi-select options that I had written to describe the books because they gave a glimpse into the book's content from my perspective. They also suggested highlighting the row on hover with a slight tint to match the book cover.
+
+For functionality, one classmate had recommended adding location-based bookstore options, possibly using Google Maps API to allow users to find local bookstores to buy books from, because I had mentioned that I wanted to avoid linking the page to buy the book on Amazon, and instead provide alternative options. When I mentioned that I was not going to go with the quiz format of the book recommendation website that I had initially proposed, they also noted a simpler way of implementing it. They liked this idea because it made the website more interactive and unique for the users visiting the website, by having users choose the vibe of an image and mapping that to a particular book recommendation instead of a complex logic quiz. Another classmate added that the quiz can also use the tags from the book detail page that I wrote to help categorize each book based on the quiz.
+
+To address this feedback, I plan on implementing an additional feature of searching for local bookstores in your area, based on your zip code or city, to purchase the book to read if I have the time to do so. I also plan to add a bit more personalization based on the book cover to the hover state and also the individual book detail pages. Furthermore, I plan on revising the cursor hover interaction where the image follows the cursor such that the image is slightly smaller and the image isn’t immediately behind the cursor but slightly to the right, such that it does not obstruct the view of where the cursor is on the screen. 
 
 ## Milestones
 
-Outline weekly milestones to plan your expected implementation progress until the end of the semester (\~300 words). 
+*Outline weekly milestones to plan your expected implementation progress until the end of the semester (\~300 words).*
 
 ### *Implementation Plan*
 
-- [ ] Week 9 Oct 28 \- Nov 1:
+- [X] Week 9 Oct 28 \- Nov 1:
   - [X] FP1 due
-  - [ ] ...
-  
-- [ ] Week 10 Nov 4 \- Nov 8:   
-  - [ ] FP2 due
-
-- [ ] Week 11 Nov 11 \- Nov 15:  
-- [ ] Week 12 Nov 18 \- Nov 22:   
-- [ ] Week 13 Nov 25 \- Nov 29:  
-
-  - [ ] Thanksgiving  
-- [ ] Week 14 Dec 2 \- Dec 6:  
-  - [ ] FP4 due 
+- [X] Week 10 Nov 4 \- Nov 8:  
+  - [X] FP2 due
+  - [ ] Iterate on Figma prototype and design for different breakpoints for responsive design
+  - [ ] Conduct additional informal usability testing for interaction and content feedback
+  - [ ] Evaluate design prototypes for accessibility
+  - [ ] Start and finish basic HTML page structure: Finish homepage and book detail page
+- [ ] Week 11 Nov 11 \- Nov 15: 
+  - [ ] Start CSS styling: Focus on global CSS styling for consistent design system components such as navbar, buttons, pills, etc.
+  - [ ] Start JS animations: Start with main interactive feature (the homepage cursor hover interactions with images following the cursor)
+  - [ ] Add breakpoints for responsive design across devices
+- [ ] Week 12 Nov 18 \- Nov 22:
+  - [ ] FP3 due
+  - [ ] Iterate on CSS styling and finalize design components: Edit and finalize global CSS styling, create CSS styling specific to the homepage and the book detail page, implement various hover states
+  - [ ] Iterate on JS animations: Finish homepage hover interactions, start book detail page book image 3d hover animation with Javascript library)
+  - [ ] Optional feature implementation (if time permits): Start feature for finding local bookstores or libraries based on your location/zip code/city to buy or borrow the book with Javascript library
+- [ ] Week 13 Nov 25 \- Nov 29: 
+  - [ ] Iterate on JS animations: Finish books detail page book image 3d hover animation, try to add microinteractions for buttons and links, also try to add additional text load animations 
+  - [ ] Usability testing to evaluate bugs, interactions for different browsers, responsiveness for different devices
+  - [ ] Start writing text content for all 10 book detail pages
+  - [ ] Optional feature implementation (if time permits): Continue feature for finding local bookstores or libraries and style Javascript library content to match CSS of my website
+  - [ ] Thanksgiving 
+- [ ] Week 14 Dec 2 \- Dec 6: 
+  - [ ] Finalize microinteractions and text load animations
+  - [ ] Final edits: Tweak JS animations and CSS styling based on usability testing
+  - [ ] Edit and finalize text content for all 10 book detail pages
+  - [ ] FP4 due
 
 ### *Libraries and Other Components*
 
-List the JS libraries and other components (if applicable) that you plan to use. 
-* 
+*List the JS libraries and other components (if applicable) that you plan to use.*
+* GSAP: JS animation library for websites
+* Three.js: 3D object
+* (Optional, if time permits): Google Maps JS API: Places Library
 
 
 ## Generative AI Use Plan
 
-Outline how you plan to use Generative AI tools to aid in the implementation (\~300 words).
+*Outline how you plan to use Generative AI tools to aid in the implementation (\~300 words).*
 
 ### *Tool Use*
 
  What would you use? Edit the list given your plan. For each tool, explain briefly on what do you expect Generative AI to help you with and what might it not be able to help you with.
 
-* ChatGPT  
-  * I will use it for … because it can help me …  
-  * I will not use it for … because it might not be able to help me with …   
-* GitHub Copilot  
-* ...
+* ChatGPT 
+  * I will use it for debugging because it can help me identify my mistakes. 
+  * I will not use it for developing the structure of my code because it might not be able to help me with learning how to think of code structures on my own.
+* GitHub Copilot 
+  * I will use it for code suggestions and debugging because it can help me with getting unstuck or identifying my mistakes.
+  * I will not use it for generating large portions of code because it might not be able to help me to develop a greater intuition and confidence of front-end development skills.
+
 
 ### *Responsible Use*
 
-How would you use Generative AI responsibly? 
+*How would you use Generative AI responsibly?*
+
+I will use Generative AI as inspiration for how to come up with design solutions for code, rather than directly copy and pasting large portions of code. I will also use it to identify bugs and have it explain what I’m doing wrong so that I can learn from mistakes. I will also cite my use of Generative AI if I decide to use small snippets of code.
 
 ---
 
