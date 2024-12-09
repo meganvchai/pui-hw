@@ -1,3 +1,20 @@
+/* Custom fonts */
+/* Snell Roundhand Script */
+@font-face {
+  font-family: "Snell Roundhand";
+  src: url('assets/fonts/SnellRoundhandScript.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* GT America Mono Regular */
+@font-face {
+  font-family: "GT America Mono";
+  src: url('assets/fonts/GT-America-Mono-Regular-Trial.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* Global styling */
 h1 {
   margin: 0;
@@ -65,7 +82,7 @@ img {
 footer p {
   display: flex;
   justify-content: center;
-  font-family: "GT America Mono Trial", -apple-system, sans-serif;
+  font-family: "GT America Mono Trial", sans-serif;
   font-size: 11px;
   text-transform: uppercase;
 }
@@ -80,7 +97,7 @@ nav {
 
 .main-title {
   color: #006a04;
-  font: 48px "Snell Roundhand", -apple-system, sans-serif;
+  font: 48px "Snell Roundhand", sans-serif;
   text-align: center;
 }
 
@@ -195,7 +212,7 @@ nav {
 button {
   padding: 8px;
   font-size: 10px;
-  font-family: "GT America Mono Trial", -apple-system, sans-serif;
+  font-family: "GT America Mono Trial", sans-serif;
   text-transform: uppercase;
   border: none;
   border-radius: 40px;
@@ -242,7 +259,7 @@ button.selected {
   padding: 10px;
   font-size: 12px;
   color: #000;
-  font-family: "GT America Mono Trial", -apple-system, sans-serif;
+  font-family: "GT America Mono Trial", sans-serif;
   text-transform: uppercase;
 }
 
@@ -261,13 +278,13 @@ button.selected {
   border: 1px solid #d1d1d1;
   border-radius: 40px;
   font-size: 11px;
-  font-family: "GT America Mono Trial", -apple-system, sans-serif;
+  font-family: "GT America Mono Trial", sans-serif;
   text-transform: uppercase;
 }
 
 /* Book detail page */
 #detail-book-title {
-  font: 32px "Snell Roundhand", -apple-system, sans-serif;
+  font: 32px "Snell Roundhand", sans-serif;
   color: #282828;
   text-transform: none;
   margin-top: 0px;

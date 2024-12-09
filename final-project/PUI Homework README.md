@@ -48,9 +48,14 @@ Describe what important external tool you used (JavaScript library, Web API, ani
 
 Describe how you iterated on your prototypes, if at all, including any changes you made to your original design while you were implementing your website and the rationale for the changes. (4-8 sentences max)
 
+As I was implementing my website, I iterated on the layout and organization of my content to make the transitions between different breakpoints smoother. In my original design, I had the navigation bar as a fixed sidebar on the left. However, during implementation, I realized it would be difficult to design a page that would effectively fit all the content at smaller breakpoints, like tablet or mobile. I changed the navigation to be at the top of the page to solve this problem. I also changed the layout of the book detail page so that the shift from the desktop to tablet breakpoint would be a more seamless transition. 
+
+
 ## Part 5: Implementation Challenge
 
 What challenges did you experience in implementing your website? (2-4 sentences max)
+
+My main challenges were implenmenting the Javascript interactions of the image cursor hover effect and the filtering mechanism. I've never coded either before and had to learn how to apply my existing knowledge of Javscript event handlers to these new scenarios.
 
 ## Part 6: Generative AI Use and Reflection
 
@@ -77,11 +82,11 @@ For the following aspects of your project, edit the corresponding table cell to 
 
 > Impact on your design and plan 
 * It matched my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  1. ChatGPT: ChatGPT helped me implement my ideas from my design plan in FP2 by providing edits to my code when it was not working as I had expected or needed explanations of how to achieve what I had in mind.
+  1. ChatGPT: ChatGPT helped me implement my ideas from my design plan in FP2 by providing edits to my code when it was not working as I had expected or needed explanations of how to achieve what I had in mind. With ChatGPT, I was able to successfully implement the functionality that I had intitially planned in FP2 with a few minor changes to edit the layout.
 * It did not match my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
   1. ChatGPT: Sometimes gave me the incorrect code or answered my questions incorrectly such that I had to debug my code myself or tell ChatGPT it made an error to correct the response.
 * GenAI tool did/did not influence my final design and implementation plan because … For example, 
-  1. ChatGPT: It did not influence my final design and implementation because I made the decision on why I wanted to redesign the layout of my website for responsiveness. I did not use ChatGPT for ideas on how hto design my website.
+  1. ChatGPT: It did not influence my final design and implementation because I made the decision on why I wanted to redesign the layout of my website for responsiveness. I did not use ChatGPT for ideas on how to design my website. I only realized that I should change my implementation plan after implementing the design first, seeing how would look like once I change the viewport dimensions in console, then went back to Figma to plan how I wanted my new layout implementation to look like before writing it in code.
 
 > Use patterns
 * I accepted the generations when …  For example, 
@@ -92,7 +97,7 @@ For the following aspects of your project, edit the corresponding table cell to 
 
 > Pros and cons of using GenAI tools
 * Pros
-  1. ChatGPT: Helps significantly with debugging, especially with Javascript interactions. Also helps with implementing ideas/interactions that I have that were not covered in class, and reduced time for me to search the web for forums or other websites that explain how to do it.
+  1. ChatGPT: Helps significantly with debugging, especially with Javascript interactions. It also helps with implementing ideas/interactions that I have that were not covered in class and reduced time for me to search the web for forums or other websites that explain how to do it. I also found ChatGPT veyr helpful to search for code syntax and rules to implement what I'm trying to achieve, rather to search up the code language documentation and find my answer.
 * Cons
   1. ChatGPT: Not always correct code, have to double check the output to see if it actually works.
 
@@ -109,6 +114,25 @@ Document the usage logs (prompts and chat history links) for the GenAI tools you
 6. https://chatgpt.com/share/6757639a-4b20-800c-b016-c3affdcb7177
 7. https://chatgpt.com/share/675763a8-f5e4-800c-8dcc-adc6e204bf4c
 
+
+## Part 7: WAVE Accessibility Checker
+
+**WAVE Homepage Summary:**
+
+![WAVE Homepage Summary](images/wave-homepage-summary.png)
+
+**WAVE Homepage Details:**
+
+![WAVE Homepage Details](images/wave-homepage-details.png)
+
+**WAVE Book Summary:**
+
+![WAVE Book Summary](images/wave-book-summary.png)
+
+**WAVE Book Details:**
+
+![WAVE Book Details](images/wave-book-details.png)
+
 ---
 
 # **FP3 \- Final Project Check-in**
@@ -117,11 +141,11 @@ Document the changes and progress of your project. How have you followed or chan
 
 ## Implementation Plan Updates
 
-- [ ] ...
+- I decided to remove the feature of where to buy the book at the user's local bookstore to reduce the scope of the project due to time constraints. I also decided to implement a filtering feature such that the rows of the books will be filtered based on the selected theme, rather than highlighting each row to showcase its corresponding theme.
 
 ## Generative AI Use Plan Updates
 
-- [ ] ...
+- Still plan to use ChatGPT as a way to debug my code and get help with how I can successfully implement my ideas in code.
 
 Remember to keep track of your prompts and usage for [FP4 writeup](#part-6-generative-ai-use-and-reflection).
 
