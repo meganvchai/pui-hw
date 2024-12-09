@@ -18,6 +18,10 @@ const imageElement = document.getElementById("detail-image-file");
 const imageFile = books[book].imageFile;
 imageElement.src = "./images/" + imageFile;
 
+// Update image alt text
+const imageAlt = books[book].alt;
+imageElement.alt = imageAlt;
+
 // Update theme
 const pillElement = document.querySelector("p.theme-pill");
 const theme = books[book].theme;
