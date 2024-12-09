@@ -151,12 +151,12 @@ nav {
   padding-left: 20px;
   padding-right: 20px;
   background-color: rgba(0, 106, 5, 0.05);
+  border-top: 1px solid #d1d1d1;
 }
 
-.book-list {
+#book-list {
   display: flex;
   flex-direction: column;
-  border-top: 1px solid #d1d1d1;
   border-bottom: 1px solid #d1d1d1;
 }
 
