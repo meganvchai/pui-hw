@@ -1,157 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="./js/gsap.min.js" defer></script>
+    <script src="./js/booksData.js" defer></script>
+    <script src="./js/homepageScript.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <meta charset="UTF-8">
+    <title>Megan's Bookshelf</title>
+  </head>
 
-<head>
-  <link rel="stylesheet" href="./css/style.css">
-  <script src="./js/gsap.min.js" defer></script>
-  <script src="./js/booksData.js" defer></script>
-  <script src="./js/homepageScript.js" defer></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-  <meta charset="UTF-8">
-  <title>Megan's Bookshelf</title>
-</head>
-
-<body>
-    <div class="bookshelf-container">
-      <div class="bookshelf-layout">
-        <nav>
-            <h1><a href="./index.html" class="main-title">Megan's Bookshelf</a></h1>
-            <p class="description">A collection of book recommendations of my favorite recent reads.</p>
-        </nav>
-    
-        <div class="main-container">
-          <img class="image-cursor" src="images/stay-true-cover.jpg" alt="Cover of Stay True by Hua Hsu: orange, yellow text, photo of a person with camera, Pulitzer badge.">
-          <section id="book-table">
-            <div class="themes-section">
-              <h2 class="themes-filter">View by book themes:</h2>
-              <div class="themes-list">
-                <button class="theme-select selected" data-theme="all">All</button>
-                <button class="theme-select" data-theme="asian-american">Asian American experience</button>
-                <button class="theme-select" data-theme="relationships">Complex human relationships</button>
-                <button class="theme-select" data-theme="narrators">Funny & insightful narrators</button>
+  <body>
+      <div class="bookshelf-container">
+        <div class="bookshelf-layout">
+          <nav>
+              <h1><a href="./index.html" class="main-title">Megan's Bookshelf</a></h1>
+              <p class="description">A collection of book recommendations of my favorite recent reads.</p>
+          </nav>
+      
+          <div class="main-container">
+            <img class="image-cursor" src="images/stay-true-cover.jpg" alt="Cover of Stay True by Hua Hsu: orange, yellow text, photo of a person with camera, Pulitzer badge.">
+            <section id="book-table">
+              <div class="themes-section">
+                <h2 class="themes-filter">View by book themes:</h2>
+                <div class="themes-list">
+                  <button class="theme-select selected" data-theme="all">All</button>
+                  <button class="theme-select" data-theme="asian-american">Asian American experience</button>
+                  <button class="theme-select" data-theme="relationships">Complex human relationships</button>
+                  <button class="theme-select" data-theme="narrators">Funny & insightful narrators</button>
+                </div>
               </div>
-            </div>
-            
-            <div class="book-list-label">
-              <h2>
-                  <span id="title-author-subtitle">Title and author</span>
-                  <span id="theme-subtitle">Theme</span>
-              </h2>
-            </div>
-
-            <div id="book-list">
-              <a class="book-item" id="stay-true" data-theme="asian-american all" href="./book-detail.html?book=stay-true">
-                <div class="book-content">
-                  <div class="book-title-number">
-                    <h3 class="book-title">Stay True<span class="book-author">, Hua Hsu</span></h3>
-                  </div>
-                  <p class="theme-pill">Asian American Experience</p>
-                  <span class="view-link">View</span>
-                </div>
-              </a>
               
-              <a class="book-item" id="tomorrow" data-theme="relationships all" href="./book-detail.html?book=tomorrow">
-                <div class="book-content">
-                  <div class="book-title-number">
-                      <h3 class="book-title">Tomorrow, and Tomorrow, and Tomorrow<span class="book-author">, Gabrielle Zevin</span></h3>
-                  </div>
-                  <p class="theme-pill">Complex Human Relationships</p>
-                  <span class="view-link">View</span>
-                </div>
-              </a>
-  
-              <a class="book-item" id="bliss" data-theme="relationships all" href="./book-detail.html?book=bliss">
-                <div class="book-content">
-                  <div class="book-title-number">
-                      <h3 class="book-title">Bliss Montage<span class="book-author">, Ling Ma</span></h3>
-                  </div>
-                  <p class="theme-pill">Complex Human Relationships</p>
-                  <span class="view-link">View</span>
-                </div>
-              </a>
-  
-              <a class="book-item" id="convenience" data-theme="narrators all" href="./book-detail.html?book=convenience">
-                <div class="book-content">
-                  <div class="book-title-number">
-                      <h3 class="book-title">Convenience Store Woman<span class="book-author">, Sakaya Murata</span></h3>
-                  </div>
-                  <p class="theme-pill">Funny & insightful narrators</p>
-                  <span class="view-link">View</span>
-                </div>
-              </a>
-  
-              <a class="book-item" id="pachinko" data-theme="relationships all" href="./book-detail.html?book=pachinko">
-                <div class="book-content">
-                  <div class="book-title-number">
-                      <h3 class="book-title">Pachinko<span class="book-author">, Min Jin Lee</span></h3>
-                  </div>
-                  <p class="theme-pill">Complex human relationships</p>
-                  <span class="view-link">View</span>
-                </div>
-              </a>
-  
-              <a class="book-item" id="severance" data-theme="asian-american all" href="./book-detail.html?book=severance">
-                <div class="book-content">
-                  <div class="book-title-number">
-                      <h3 class="book-title">Severance<span class="book-author">, Ling Ma</span></h3>
-                  </div>
-                  <p class="theme-pill">Asian American Experience</p>
-                  <span class="view-link">View</span>
-                </div>
-              </a>
-  
-              <a class="book-item" id="interpreter" data-theme="asian-american all" href="./book-detail.html?book=interpreter">
-                <div class="book-content">
-                  <div class="book-title-number">
-                      <h3 class="book-title">Interpreter of Maladies<span class="book-author">, Jhumpa Lahiri</span></h3>
-                  </div>
-                  <p class="theme-pill">Asian American Experience</p>
-                  <span class="view-link">View</span>
-                </div>
-              </a>
-  
-              <a class="book-item" id="conversations" data-theme="relationships all" href="./book-detail.html?book=conversations">
-                <div class="book-content">
-                  <div class="book-title-number">
-                      <h3 class="book-title">Conversations with Friends<span class="book-author">, Sally Rooney</span></h3>
-                  </div>
-                  <p class="theme-pill">Complex Human Relationships</p>
-                  <span class="view-link">View</span>
-                </div>
-              </a>
-  
-              <a class="book-item" id="normal-people" data-theme="relationships all" href="./book-detail.html?book=normal-people">
-                <div class="book-content">
-                  <div class="book-title-number">
-                      <h3 class="book-title">Normal People<span class="book-author">, Sally Rooney</span></h3>
-                  </div>
-                  <p class="theme-pill">Complex Human Relationships</p>
-                  <span class="view-link">View</span>
-                </div>
-              </a>
-              
-              <a class="book-item" id="easy-job" data-theme="narrators all" href="./book-detail.html?book=easy-job">
-                <div class="book-content">
-                  <div class="book-title-number">
-                      <h3 class="book-title">There's No Such Thing as an Easy Job<span class="book-author">, Kikuko Tsumura</span></h3>
-                  </div>
-                  <p class="theme-pill">Funny & insightful narrators</p>
-                  <span class="view-link">View</span>
-                </div>
-              </a>
-            </div>
-          </section>
+              <div class="book-list-label">
+                <h2>
+                    <span id="title-author-subtitle">Title and author</span>
+                    <span id="theme-subtitle">Theme</span>
+                </h2>
+              </div>
 
-          <section class="about">
-            <h2>About this website</h2>
-            <p>Hello and welcome to my little corner of the internet! This is a website dedicated to my friends and family and is a curated list of book recommendations that I love and think that everyone should read. Borrow the book from your local library (it's free!) or buy it from a local bookstore (not Amazon!). If you choose to read a book from this list, please let me what you think!</p>
-          </section>
+              <div id="book-list">
+                <a class="book-item" id="stay-true" data-theme="asian-american all" href="./book-detail.html?book=stay-true">
+                  <div class="book-content">
+                    <div class="book-title-number">
+                      <h3 class="book-title">Stay True<span class="book-author">, Hua Hsu</span></h3>
+                    </div>
+                    <p class="theme-pill">Asian American Experience</p>
+                    <span class="view-link">View</span>
+                  </div>
+                </a>
+                
+                <a class="book-item" id="tomorrow" data-theme="relationships all" href="./book-detail.html?book=tomorrow">
+                  <div class="book-content">
+                    <div class="book-title-number">
+                        <h3 class="book-title">Tomorrow, and Tomorrow, and Tomorrow<span class="book-author">, Gabrielle Zevin</span></h3>
+                    </div>
+                    <p class="theme-pill">Complex Human Relationships</p>
+                    <span class="view-link">View</span>
+                  </div>
+                </a>
+    
+                <a class="book-item" id="bliss" data-theme="relationships all" href="./book-detail.html?book=bliss">
+                  <div class="book-content">
+                    <div class="book-title-number">
+                        <h3 class="book-title">Bliss Montage<span class="book-author">, Ling Ma</span></h3>
+                    </div>
+                    <p class="theme-pill">Complex Human Relationships</p>
+                    <span class="view-link">View</span>
+                  </div>
+                </a>
+    
+                <a class="book-item" id="convenience" data-theme="narrators all" href="./book-detail.html?book=convenience">
+                  <div class="book-content">
+                    <div class="book-title-number">
+                        <h3 class="book-title">Convenience Store Woman<span class="book-author">, Sakaya Murata</span></h3>
+                    </div>
+                    <p class="theme-pill">Funny & insightful narrators</p>
+                    <span class="view-link">View</span>
+                  </div>
+                </a>
+    
+                <a class="book-item" id="pachinko" data-theme="relationships all" href="./book-detail.html?book=pachinko">
+                  <div class="book-content">
+                    <div class="book-title-number">
+                        <h3 class="book-title">Pachinko<span class="book-author">, Min Jin Lee</span></h3>
+                    </div>
+                    <p class="theme-pill">Complex human relationships</p>
+                    <span class="view-link">View</span>
+                  </div>
+                </a>
+    
+                <a class="book-item" id="severance" data-theme="asian-american all" href="./book-detail.html?book=severance">
+                  <div class="book-content">
+                    <div class="book-title-number">
+                        <h3 class="book-title">Severance<span class="book-author">, Ling Ma</span></h3>
+                    </div>
+                    <p class="theme-pill">Asian American Experience</p>
+                    <span class="view-link">View</span>
+                  </div>
+                </a>
+    
+                <a class="book-item" id="interpreter" data-theme="asian-american all" href="./book-detail.html?book=interpreter">
+                  <div class="book-content">
+                    <div class="book-title-number">
+                        <h3 class="book-title">Interpreter of Maladies<span class="book-author">, Jhumpa Lahiri</span></h3>
+                    </div>
+                    <p class="theme-pill">Asian American Experience</p>
+                    <span class="view-link">View</span>
+                  </div>
+                </a>
+    
+                <a class="book-item" id="conversations" data-theme="relationships all" href="./book-detail.html?book=conversations">
+                  <div class="book-content">
+                    <div class="book-title-number">
+                        <h3 class="book-title">Conversations with Friends<span class="book-author">, Sally Rooney</span></h3>
+                    </div>
+                    <p class="theme-pill">Complex Human Relationships</p>
+                    <span class="view-link">View</span>
+                  </div>
+                </a>
+    
+                <a class="book-item" id="normal-people" data-theme="relationships all" href="./book-detail.html?book=normal-people">
+                  <div class="book-content">
+                    <div class="book-title-number">
+                        <h3 class="book-title">Normal People<span class="book-author">, Sally Rooney</span></h3>
+                    </div>
+                    <p class="theme-pill">Complex Human Relationships</p>
+                    <span class="view-link">View</span>
+                  </div>
+                </a>
+                
+                <a class="book-item" id="easy-job" data-theme="narrators all" href="./book-detail.html?book=easy-job">
+                  <div class="book-content">
+                    <div class="book-title-number">
+                        <h3 class="book-title">There's No Such Thing as an Easy Job<span class="book-author">, Kikuko Tsumura</span></h3>
+                    </div>
+                    <p class="theme-pill">Funny & insightful narrators</p>
+                    <span class="view-link">View</span>
+                  </div>
+                </a>
+              </div>
+            </section>
+
+            <section class="about">
+              <h2>About this website</h2>
+              <p>Hello and welcome to my little corner of the internet! This is a website dedicated to my friends and family and is a curated list of book recommendations that I love and think that everyone should read. Borrow the book from your local library (it's free!) or buy it from a local bookstore (not Amazon!). If you choose to read a book from this list, please let me what you think!</p>
+            </section>
+          </div>
+
+          <footer>
+            <p>Made with ♥︎ by Megan Chai</p>
+          </footer>
         </div>
-
-        <footer>
-          <p>Made with ♥︎ by Megan Chai</p>
-        </footer>
       </div>
-    </div>
-</body>
+  </body>
+</html>

@@ -28,7 +28,7 @@ Array.from(bookRows).forEach(function (bookRow) {
     yTo(hoverEvent.clientY);
   });
 
-  bookRow.addEventListener("mousemove", function(hoverEvent) {  
+  bookRow.addEventListener("mousemove", function (hoverEvent) {
     xTo(hoverEvent.clientX + offsetX);
     yTo(hoverEvent.clientY);
   });

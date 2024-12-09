@@ -2,7 +2,7 @@
 /* Snell Roundhand Script */
 @font-face {
   font-family: "Snell Roundhand";
-  src: url('assets/fonts/SnellRoundhandScript.ttf') format('truetype');
+  src: url("assets/fonts/SnellRoundhandScript.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -10,7 +10,7 @@
 /* GT America Mono Regular */
 @font-face {
   font-family: "GT America Mono";
-  src: url('assets/fonts/GT-America-Mono-Regular-Trial.otf') format('opentype');
+  src: url("assets/fonts/GT-America-Mono-Regular-Trial.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
@@ -181,7 +181,7 @@ nav {
 .book-item {
   border-top: 1px solid #d1d1d1;
   display: flex;
-  width: 100%
+  width: 100%;
 }
 
 .book-content {
