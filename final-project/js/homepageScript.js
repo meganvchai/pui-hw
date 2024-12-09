@@ -20,7 +20,7 @@ Array.from(bookRows).forEach(function (bookRow) {
 
     if (imageThumbnail) {
       const imageCursor = document.querySelector(".image-cursor");
-      imageCursor.src = "./images/" + imageThumbnail;
+      imageCursor.src = "./assets/images/" + imageThumbnail;
       imageCursor.style.display = "block";
     }
 
