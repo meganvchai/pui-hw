@@ -2,27 +2,23 @@
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const book = params.get("book");
+const bookData = books[book];
 
-// Update book title
-const headerElement = document.getElementById("detail-book-title");
-const title = books[book].title;
-headerElement.textContent = title;
+// Function to update book content
+const updateElement = function (selector, property, value) {
+  const element = document.querySelector(selector);
+  if (property === "textContent") {
+    element.textContent = value;
+  } else if (property === "src" || property === "alt") {
+    element[property] = value;
+  }
+};
 
-// Update book author
-const authorElement = document.getElementById("detail-book-author");
-const author = books[book].author;
-authorElement.textContent = author;
-
-// Update book cover image
-const imageElement = document.getElementById("detail-image-file");
-const imageFile = books[book].imageFile;
-imageElement.src = "./images/" + imageFile;
-
-// Update image alt text
-const imageAlt = books[book].alt;
-imageElement.alt = imageAlt;
-
-// Update theme
-const pillElement = document.querySelector("p.theme-pill");
-const theme = books[book].theme;
-pillElement.textContent = theme;
+// Update book details
+updateElement("#detail-book-title", "textContent", bookData.title); // Update title
+updateElement("#detail-book-author", "textContent", bookData.author); // Update author
+updateElement("#detail-image-file", "src", `./images/${bookData.imageFile}`); // Update image file
+updateElement("#detail-image-file", "alt", bookData.alt); // Update alt text
+updateElement("p.theme-pill", "textContent", bookData.theme); // Update theme
+updateElement("#summary", "textContent", bookData.summary); // Update summary
+updateElement("#notes", "textContent", bookData.notes); // Update notes
