@@ -18,22 +18,31 @@ Describe your website (300 words).
 * What information do you convey with your website?   
 * How is it interesting and engaging? 
 
+The purpose of my website is to share book recommendations with friends and family. When I mention books that I’m reading to my friends and family in a conversation, a question people often ask is “what are some books you recommend”? This website focuses on providing a space for me to curate a list of books and write my own personal summaries and notes on them, describing what I enjoy about the book and why others should consider reading too. I hope to convey information that is personal to me and be able to share that with my friends and family. Although I have a Goodreads account, a social media platform where you can save and review books you’ve read, this website is a more personalized take on this idea and allows me to be able to share my own website to my friends and family for a more personal book recommendation list. It’s important to me because I believe that reading books provides a unique view of the world and society from the point of view of the author. Reading also encourages crucial self-reflection on one’s own personal experiences, values, and future. I also wanted to convey it in a way that reflects my personal visual design style, which is more minimalist and traditional but with a twist. I wanted to create interesting and engaging interactions to encourage users to explore the site, such as the ability to pick filters that narrow down the list of books, based on what the user would be most interested in. Furthermore, I wanted to add additional interactivity and visuals that made this website unique compared to typical websites, such as the cursor animation where the book image that follows the cursor changes as you hover over the rows of different books.
+
+
 ## Part 2: User Interaction
 
 How a user would interact with your website? For each step, briefly but clearly state the interaction type & how we should reproduce it.
 
-1. Interaction type. Click on X on page Y / scroll on page X, etc.  
-2. 
+1. [Homepage] Image follows mouse for each row: Hover over each book row for the corresponding book cover image to follow movement of the mouse.
+2. [Homepage] Filter rows: Click on theme buttons to filter rows in the table by the selected theme.
+3. [Homepage] Click on rows: Click on rows to navigate to each book detail page.
+4. [Detail page] Click on back: Click on the back link to navigate to the homepage.
+5. [Homepage] Click on website title: Click on the website title to navigate to the homepage.
 
 ## Part 3: External Tool
 
 Describe what important external tool you used (JavaScript library, Web API, animations, or other). Following the bulleted list format below, reply to each of the prompts.
 
-1. Name of tool1  
-   * Why did you choose to use it over other alternatives? (2 sentences max)  
-   * How you used it? (2 sentences max)  
-   * What does it add to your website? (2 sentences max)  
-2. Name of tool2
+1. GSAP (Javascript library)
+* Why did you choose to use it over other alternatives? (2 sentences max)
+  * I chose to use the GSAP library because of its flexibility and customization for any kind of animation and because it outputs smooth and visually pleasing animations with easy code.
+* How you used it? (2 sentences max) 
+  * I used GSAP to animate the image that follows the cursor to be smooth and lightweight.
+* What does it add to your website? (2 sentences max) 
+  * It adds interactivity to the website, rather than having a static list of books. It would encourage users to hover over each row to explore and read the titles and themes of each book to see what would engage them to click and read more about it.
+
 
 ## Part 4: Design Iteration
 

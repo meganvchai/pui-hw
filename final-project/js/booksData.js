@@ -69,7 +69,7 @@ const books = {
       imageThumbnail: "conversations-thumbnail.jpg",
       imageFile: "conversations-cover.jpg",
       theme: "Complex human relationships",
-      alt: "The book cover for Conversations with Friends by Sally Rooney features two illustrated female faces against a vibrant yellow background,".
+      alt: "The book cover for Conversations with Friends by Sally Rooney features two illustrated female faces against a vibrant yellow background.",
     },
   
     "normal-people": {
