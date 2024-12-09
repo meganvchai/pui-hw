@@ -13,7 +13,7 @@ h2 {
   font-size: 12px;
   text-transform: uppercase;
   font-weight: 400;
-  color: #9a9a9a;
+  color: #595959;
   margin: 0px;
 }
 
@@ -50,7 +50,7 @@ a:hover {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #9a9a9a;
+  color: #595959;
   margin-bottom: 24px;
 }
 
@@ -72,7 +72,7 @@ footer p {
   display: flex;
   justify-content: center;
   font-family: "GT America Mono Trial", -apple-system, sans-serif;
-  font-size: 10px;
+  font-size: 11px;
   text-transform: uppercase;
 }
 
@@ -193,7 +193,7 @@ nav {
 }
 
 .book-author {
-  color: #9a9a9a;
+  color: #595959;
   font-weight: 400;
 }
 
@@ -266,7 +266,7 @@ button.selected {
   padding: 8px;
   border: 1px solid #d1d1d1;
   border-radius: 40px;
-  font-size: 10px;
+  font-size: 11px;
   font-family: "GT America Mono Trial", -apple-system, sans-serif;
   text-transform: uppercase;
 }
