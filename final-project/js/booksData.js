@@ -6,7 +6,7 @@ const books = {
       imageThumbnail: "stay-true-thumbnail.jpg",
       imageFile: "stay-true-cover.jpg",
       theme: "Asian American experience",
-      alt: "The book cover of Stay True by Hua Hsu features a warm orange background with bold yellow text, a nostalgic photo of a person holding a camera, a handwritten subtitle 'A Memoir,' and a gold badge stating 'Winner of the Pulitzer Prize'.",
+      alt: "The book cover of Stay True by Hua Hsu features a warm orange background with bold yellow text, a nostalgic photo of a person holding a camera, a handwritten subtitle 'A Memoir,' and a gold badge stating 'Winner of the Pulitzer Prize.'",
     },
   
     "tomorrow": {
@@ -15,7 +15,7 @@ const books = {
       imageThumbnail: "tomorrow-thumbnail.jpg",
       imageFile: "tomorrow-cover.jpg",
       theme: "Complex human relationships",
-      alt: "The book cover of Tomorrow, and Tomorrow, and Tomorrow by Gabrielle Zevin features bold, colorful layered text over a vibrant illustration of stylized waves inspired by Japanese art, with the subtitle 'A Novel' and a note that it is by the bestselling author of The Storied Life of A.J. Fikry.",
+      alt: "The book cover of Tomorrow, and Tomorrow, and Tomorrow by Gabrielle Zevin features bold, colorful layered text over a vibrant illustration of stylized waves inspired by Japanese art, a note that it is by the bestselling author of The Storied Life of A.J. Fikry.",
     },
   
     "bliss": {
