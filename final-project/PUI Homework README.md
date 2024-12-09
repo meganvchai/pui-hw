@@ -68,49 +68,46 @@ For the following aspects of your project, edit the corresponding table cell to 
 
 | Tool Name | Ratings | design | plan | write code | debug | \_ (other?) |
 | :---- | :---- | :---- | :---- | :---- | :---- | :---- |
-| Tool1 | Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
-| Tool1 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
-| Tool2| Usage | Yes/No | Yes/No | Yes/No | Yes/No | Yes/No |
-| Tool2 | Productivity | 1~7 | 1~7 | 1~7 | 1~7 | 1~7 |
+| ChatGPT | Usage | No | No | Yes | Yes | Yes/No |
+| ChatGPT | Productivity | N/A | N/A | 7 | 7 | 1~7 |
+
 
 
 ### Usage Reflection
 
 > Impact on your design and plan 
 * It matched my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  1. Tool1: 
-  2. Tool2:
+  1. ChatGPT: ChatGPT helped me implement my ideas from my design plan in FP2 by providing edits to my code when it was not working as I had expected or needed explanations of how to achieve what I had in mind.
 * It did not match my expectations and plan in [FP2](#generative-ai-use-plan) in that … For example, 
-  1. Tool1: 
-  2. Tool2:
+  1. ChatGPT: Sometimes gave me the incorrect code or answered my questions incorrectly such that I had to debug my code myself or tell ChatGPT it made an error to correct the response.
 * GenAI tool did/did not influence my final design and implementation plan because … For example, 
-  1. Tool1: 
-  2. Tool2:
+  1. ChatGPT: It did not influence my final design and implementation because I made the decision on why I wanted to redesign the layout of my website for responsiveness. I did not use ChatGPT for ideas on how hto design my website.
 
 > Use patterns
 * I accepted the generations when …  For example, 
-  1. Tool1: this tool once suggested … and I adjusted my design according to the suggestion because … 
-  2. Tool2: 
+  1. ChatGPT: When implementing my URL parameters function to get data for each book detail page, ChatGPT suggested that I refactor my code into a helper function to reduce redundancy in my code.
 * I critiqued/evaluated the generated suggestions by … For example, 
-  1. Tool1: this tool once suggested … but I modified/rejected the suggestion because … 
-  2. Tool2: 
+  1. ChatGPT: I used ChatGPT to help clean up my code, and for example I asked it to help clean up CSS classes and it referenced classes that I did actually use in my HTML. I had to check for unused CSS classes myself.
 
 
 > Pros and cons of using GenAI tools
 * Pros
-  1. Tool1: 
-  2. Tool2:
+  1. ChatGPT: Helps significantly with debugging, especially with Javascript interactions. Also helps with implementing ideas/interactions that I have that were not covered in class, and reduced time for me to search the web for forums or other websites that explain how to do it.
 * Cons
-  1. Tool1: 
-  2. Tool2:
+  1. ChatGPT: Not always correct code, have to double check the output to see if it actually works.
 
 
 ### Usage Log
 
 Document the usage logs (prompts and chat history links) for the GenAI tools you used. Some tools may not have an easy way to share usage logs, just try your best! Some instructions for different tools:
 
-1. [ChatGPT](https://help.openai.com/en/articles/7925741-chatgpt-shared-links-faq) / [Gemini](https://support.google.com/gemini/answer/13743730?hl=en&co=GENIE.Platform%3DDesktop): share the anonymous link to all of your chat histories relevant to this project
-2. [GitHub Copilot (VSCode)](https://code.visualstudio.com/docs/copilot/copilot-chat#:~:text=You%20can%20export%20all%20prompts%20and%20responses%20for%20a%20chat%20session%20in%20a%20JSON%20file%20with%20the%20Chat%3A%20Export%20Session...%20command%20(workbench.action.chat.export)%20in%20the%20Command%20Palette.): export chat histories relevant to this project.
+1. https://chatgpt.com/share/675762e7-8770-800b-aa90-57f919d05031
+2. https://chatgpt.com/share/67576303-6c54-800b-8673-174affdfa142
+3. https://chatgpt.com/share/67576340-0f8c-800b-9a55-0fca3e68ffb3
+4. https://chatgpt.com/share/6757634f-1728-800b-8aec-d2c84f3a1060
+5. https://chatgpt.com/share/6757635b-fc08-800b-b890-c1b4a676551b
+6. https://chatgpt.com/share/6757639a-4b20-800c-b016-c3affdcb7177
+7. https://chatgpt.com/share/675763a8-f5e4-800c-8dcc-adc6e204bf4c
 
 ---
 
