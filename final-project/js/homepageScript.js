@@ -1,23 +1,10 @@
-// Create object with book cover image file names
-const bookCovers = {
-  "stay-true": "images/stay-true-cover.jpg",
-  tomorrow: "images/tomorrow-cover.jpg",
-  bliss: "images/bliss-cover.jpg",
-  convenience: "images/convenience-cover.jpg",
-  pachinko: "images/pachinko-cover.jpg",
-  severance: "images/severance-cover.jpg",
-  interpreter: "images/interpreter-cover.jpg",
-  conversations: "images/conversations-cover.jpg",
-  "normal-people": "images/normal-people-cover.jpg",
-  "easy-job": "images/easy-job-cover.jpg",
-};
-
+// GSAP function & image following mouse source: https://gsap.com/community/forums/topic/30502-mouse-cursor-follow-animation/
 // Set book cover image class to follow the mouse movement
 gsap.set(".image-cursor", { xPercent: -50, yPercent: -50 });
 
 // Create GSAP functions to create smooth animations
-let xTo = gsap.quickTo(".image-cursor", "x", { duration: 1, ease: "power3" });
-let yTo = gsap.quickTo(".image-cursor", "y", { duration: 1, ease: "power3" });
+let xTo = gsap.quickTo(".image-cursor", "x", { duration: 0.3, ease: "power1" });
+let yTo = gsap.quickTo(".image-cursor", "y", { duration: 0.3, ease: "power1" });
 
 // Define hover image horizontal offset in pixels
 const offsetX = 100;
@@ -28,15 +15,30 @@ const bookRows = document.getElementsByClassName("book-item");
 Array.from(bookRows).forEach(function (bookRow) {
   bookRow.addEventListener("mouseenter", function (hoverEvent) {
     const bookId = bookRow.id;
-    const imageFile = bookCovers[bookId];
+    const bookObject = books[bookId];
+    const imageThumbnail = bookObject.imageThumbnail;
 
-    if (imageFile) {
-      document.querySelector(".image-cursor").src = imageFile;
+    if (imageThumbnail) {
+      const imageCursor = document.querySelector(".image-cursor");
+      imageCursor.src = "./images/" + imageThumbnail;
+      imageCursor.style.display = "block";
     }
 
     xTo(hoverEvent.clientX + offsetX);
     yTo(hoverEvent.clientY);
   });
+
+  bookRow.addEventListener("mousemove", function(hoverEvent) {  
+    xTo(hoverEvent.clientX + offsetX);
+    yTo(hoverEvent.clientY);
+  });
+});
+
+// Hide hover image when the mouse leaves the book-list section
+const bookListSection = document.getElementById("book-list");
+bookListSection.addEventListener("mouseleave", function () {
+  const imageCursor = document.querySelector(".image-cursor");
+  imageCursor.style.display = "none";
 });
 
 const themePills = document.querySelectorAll(".theme-select");
@@ -71,7 +73,9 @@ themePills.forEach(function (pill) {
 // Function to filter books by selected theme
 function filterBooksByTheme(theme) {
   allBookItems.forEach(function (bookItem) {
-    if (bookItem.getAttribute("data-theme") === theme) {
+    const themes = bookItem.getAttribute("data-theme").split(" ");
+
+    if (themes.includes(theme)) {
       bookItem.style.display = "block"; // Show matching book
     } else {
       bookItem.style.display = "none"; // Hide non-matching book

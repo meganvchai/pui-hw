@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/gsap.min.js" defer></script>
+    <script src="js/booksData.js" defer></script>
+    <script src="js/detailScript.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Symbols+Outlined">
+    <meta charset="UTF-8">
+    <title>Megan's Bookshelf</title>
+  </head>
+
+  <body>
+    <div class="bookshelf-container">
+        <div class="bookshelf-layout">
+            <nav>
+                <h1><a href="./index.html" class="main-title">Megan's Bookshelf</a></h1>
+                <p class="description">A collection of book recommendations of my favorite recent reads.</p>
+            </nav>
+
+            <div class="detail-container">
+                <div class="back">
+                    <span class="material-symbols-outlined size-16">arrow_back_ios_new</span>
+                    <a class="grey-text" href="index.html">Back</a>
+                </div>
+                <div class="two-columns">
+                    <div class="column-left">
+                        <div class="detail-image">
+                            <img src="images/stay-true-cover.jpg" alt="stay true by hua hsu book cover" id="detail-image-file">
+                        </div>
+                    </div>
+
+                    <div class="column-right">
+                        <div class="detail-content">
+                            <section class="book-info">
+                                <h2 id="detail-book-title">Stay True</h2>
+                                <p id="detail-book-author">Hua Hsu</p>
+                                <div class="themes-list">
+                                    <p class="theme-pill">Complex Human Relationships</p>
+                                </div>
+                            </section>
+
+                            <div>
+                                <section class="summary">
+                                    <h3 class="grey-text">Summary</h3>
+                                    <p>
+                                    A memoir from the New Yorker staff writer Hua Hsu, about his
+                                    coming-of-age experiences with friendship, grief, the search for
+                                    self, and the arts. Dedicated to his college friend Ken who died
+                                    in a tragic murder, Hsu chronicles their unique friendship through
+                                    shared their everyday college experiences and formation of an
+                                    Asian American identity.
+                                    </p>
+                                </section>
+                
+                                <section class="personal notes">
+                                    <h3 class="grey-text">Personal notes</h3>
+                                    <p>
+                                    I loved Hua Hsu's reflections on friendship and coming-of-age and
+                                    how his writing felt so immersive and lyrical in this memoir. As a
+                                    Berkeley alum, I especially enjoyed the nostalgia of his Berkeley
+                                    college experience and how tangible it felt.
+                                    </p>
+                                </section>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer>
+                <p>Made with ♥︎ by Megan Chai</p>
+            </footer>
+        </div>
+    </div>
+  </body>
+</html>

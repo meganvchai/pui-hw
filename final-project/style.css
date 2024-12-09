@@ -1,25 +1,95 @@
 /* Global styling */
 h1 {
-  color: #006a04;
-  font: 200 64px "Snell Roundhand", -apple-system, sans-serif;
   margin: 0;
 }
 
+.main-title {
+  color: #006a04;
+  font: 48px "Snell Roundhand", -apple-system, sans-serif;
+  text-align: center;
+}
+
 h2 {
-  font-size: 16px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 400;
+  color: #9a9a9a;
+  margin: 0px;
 }
 
 h3 {
   font-size: 16px;
+  font-weight: 400;
 }
 
 body {
+  font: 400 20px Inter, sans-serif;
   color: #282828;
   background-color: #fffef9;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  line-height: 1.2;
+}
+
+.material-symbols-outlined.size-16 {
+  font-size: 16px;
 }
 
 a {
-  color: #006a04;
+  text-decoration: none;
+  color: #282828;
+  font-size: 16px;
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+.back {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #9a9a9a;
+  margin-bottom: 24px;
+}
+
+.grey-text {
+  color: #9a9a9a;
+}
+
+p {
+  font-size: 15px;
+}
+
+img {
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+}
+
+footer p {
+  display: flex;
+  justify-content: center;
+  font-family: "GT America Mono Trial", -apple-system, sans-serif;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+/* Navbar with title and description */
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.description {
+  color: #2b2b2b;
+  font: 400 16px Inter, sans-serif;
+  text-align: center;
+  width: 70%;
+  margin-top: 8px;
 }
 
 /* Image cursor on hover */
@@ -30,6 +100,8 @@ a {
   left: 0;
   pointer-events: none;
   will-change: transform;
+  opacity: 70%;
+  display: none;
 }
 
 .book-item:hover {
@@ -47,102 +119,53 @@ a {
   font-size: 16px;
   visibility: hidden;
   margin-left: auto;
+  color: #006a04;
 }
 
 .bookshelf-container {
-  overflow: hidden;
-  padding: 40px 40px;
+  display: flex;
+  gap: 64px;
+  padding: 64px 40px;
+  width: 100%;
+  justify-content: center;
 }
 
 .bookshelf-layout {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+  gap: 48px;
+  max-width: 900px;
+}
+
+/* Books list */
+.main-container {
+  font: 20px Inter, sans-serif;
+  color: #2b2b2b;
+  display: flex;
+  flex-direction: column;
   gap: 64px;
 }
 
-.sidebar {
-  display: flex;
-  position: fixed;
-  flex-direction: column;
-  line-height: normal;
-  width: 300px;
-  height: 100vh;
-}
-
-.header-content {
-  display: flex;
-  flex-direction: column;
-}
-
-.title-wrapper {
-  display: flex;
-  max-width: 320px;
-  flex-direction: column;
-}
-
-.description {
-  color: #2b2b2b;
-  margin-top: 8px;
-  font: 400 20px Inter, sans-serif;
-}
-
-.themes-section {
-  margin-top: 48px;
-  font-family: Inter, sans-serif;
-}
-
-.themes-title {
-  color: #9a9a9a;
-  font-size: 16px;
-  font-weight: 500;
-}
-
-.theme-list {
-  margin-top: 12px;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-}
-
-.theme-item {
-  padding: 10px;
-  font-size: 12px;
-  color: #000;
-  font-family: "GT America Mono Trial", -apple-system, sans-serif;
-  text-transform: uppercase;
-}
-
-.theme-item:hover {
-  background-color: rgba(231, 231, 231, 0.3);
-}
-
-#title-author-subtitle {
-  display: inline-block;
-  width: 60%;
-}
-
-.theme-pill {
-  padding: 8px;
-  font-size: 10px;
-  font-family: "GT America Mono Trial", -apple-system, sans-serif;
-  text-transform: uppercase;
-  border: 1px solid #d1d1d1;
-  border-radius: 40px;
-}
-.book-list-container {
-  width: calc(100% - 340px);
-  margin-left: 340px;
-  font: 20px Inter, sans-serif;
-  color: #2b2b2b;
+.book-list-label {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: rgba(0, 106, 5, 0.05);
 }
 
 .book-list {
   display: flex;
   flex-direction: column;
+  border-top: 1px solid #d1d1d1;
+  border-bottom: 1px solid #d1d1d1;
 }
 
 .book-item {
   border-top: 1px solid #d1d1d1;
+  display: flex;
+  width: 100%
 }
 
 .book-content {
@@ -150,6 +173,7 @@ a {
   align-items: center;
   box-sizing: border-box;
   padding: 20px;
+  width: 100%;
 }
 
 .book-number {
@@ -189,6 +213,11 @@ button {
   display: flex;
   gap: 10px;
   margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.themes-filter {
+  margin-bottom: 12px;
 }
 
 button:hover {
@@ -201,43 +230,114 @@ button.selected {
   border-color: rgba(0, 106, 5);
 }
 
+.themes-section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.themes-list {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.theme-item {
+  padding: 10px;
+  font-size: 12px;
+  color: #000;
+  font-family: "GT America Mono Trial", -apple-system, sans-serif;
+  text-transform: uppercase;
+}
+
+.theme-item:hover {
+  background-color: rgba(231, 231, 231, 0.3);
+}
+
+#title-author-subtitle {
+  display: inline-block;
+  width: 60%;
+}
+
+.theme-pill {
+  margin: 0px;
+  padding: 8px;
+  border: 1px solid #d1d1d1;
+  border-radius: 40px;
+  font-size: 10px;
+  font-family: "GT America Mono Trial", -apple-system, sans-serif;
+  text-transform: uppercase;
+}
+
+/* Book detail page */
+#detail-book-title {
+  font: 32px "Snell Roundhand", -apple-system, sans-serif;
+  color: #282828;
+  text-transform: none;
+  margin-top: 0px;
+  margin-bottom: 8px;
+}
+
+#detail-book-author {
+  margin-top: 0px;
+  margin-bottom: 24px;
+}
+
+.detail-content {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.two-columns {
+  display: flex;
+  gap: 40px;
+}
+
+.detail-image {
+  max-width: 300px;
+  height: auto;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* Responsive layouts */
 
+/* Tablet breakpoint */
 @media (max-width: 991px) {
-  .bookshelf-container {
-    padding: 0 20px;
-  }
-
-  .bookshelf-layout {
-    flex-direction: column;
-    gap: 0;
-  }
-
-  .sidebar {
-    width: 100%;
-    margin-top: 40px;
-  }
-
+  /* Global styling */
   .h1 {
     font-size: 40px;
   }
 
-  .themes-section {
-    margin-top: 40px;
-  }
-
-  .logo-circle {
-    margin-top: 40px;
-    padding: 0 20px;
-  }
-
   .book-list-container {
     width: 100%;
-    margin-top: 40px;
     padding-top: 100px;
   }
 
-  .highlight-row {
-    margin-top: 40px;
+  /* Homepage */
+  /* Book detail page */
+  .two-columns {
+    flex-direction: column;
+  }
+
+  .column-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .detail-image {
+    max-width: 150px;
   }
 }
