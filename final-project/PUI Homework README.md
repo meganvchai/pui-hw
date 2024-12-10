@@ -20,6 +20,10 @@ Describe your website (300 words).
 
 The purpose of my website is to share book recommendations with friends and family. When I mention books that I’m reading to my friends and family in a conversation, a question people often ask is “what are some books you recommend”? This website focuses on providing a space for me to curate a list of books and write my own personal summaries and notes on them, describing what I enjoy about the book and why others should consider reading too. I hope to convey information that is personal to me and be able to share that with my friends and family. Although I have a Goodreads account, a social media platform where you can save and review books you’ve read, this website is a more personalized take on this idea and allows me to be able to share my own website to my friends and family for a more personal book recommendation list. It’s important to me because I believe that reading books provides a unique view of the world and society from the point of view of the author. Reading also encourages crucial self-reflection on one’s own personal experiences, values, and future. I also wanted to convey it in a way that reflects my personal visual design style, which is more minimalist and traditional but with a twist. I wanted to create interesting and engaging interactions to encourage users to explore the site, such as the ability to pick filters that narrow down the list of books, based on what the user would be most interested in. Furthermore, I wanted to add additional interactivity and visuals that made this website unique compared to typical websites, such as the cursor animation where the book image that follows the cursor changes as you hover over the rows of different books.
 
+> Responsive breakpoints implemented
+* Desktop: <1441px
+* Tablet : <991px
+
 
 ## Part 2: User Interaction
 
@@ -119,19 +123,19 @@ Document the usage logs (prompts and chat history links) for the GenAI tools you
 
 **WAVE Homepage Summary:**
 
-![WAVE Homepage Summary](images/wave-homepage-summary.png)
+![WAVE Homepage Summary](assets/images/wave-homepage-summary.png)
 
 **WAVE Homepage Details:**
 
-![WAVE Homepage Details](images/wave-homepage-details.png)
+![WAVE Homepage Details](assets/images/wave-homepage-details.png)
 
 **WAVE Book Summary:**
 
-![WAVE Book Summary](images/wave-book-summary.png)
+![WAVE Book Summary](assets/images/wave-book-summary.png)
 
 **WAVE Book Details:**
 
-![WAVE Book Details](images/wave-book-details.png)
+![WAVE Book Details](assets/images/wave-book-details.png)
 
 ---
 
@@ -161,13 +165,13 @@ A personal book recommendations website for my friends and family, including a l
 
 ### *Prototype 1*
 
-![Homepage iteration 1](images/prototype1-v1.png)
+![Homepage iteration 1](assets/images/prototype1-v1.png)
 
 **Homepage:** Users can see a list of books I recommend and filter based on various, common book themes that I enjoy. Users can also hover on each row to see the corresponding image of the book cover appear and follow the cursor.
 
 ### *Prototype 2*
 
-![Book detail page iteration 1](images/prototype2-v1.png)
+![Book detail page iteration 1](assets/images/prototype2-v1.png)
 
 **Book detail page:** Users can see a more detailed list of themes explored in the book, along with my written short summary and notes on why I recommend this book.
 
@@ -190,11 +194,11 @@ Another participant was unclear about where information of the book tags came fr
 
 Show screenshots of your updated design based on the user feedback (\<100 words, \~2 images).
 
-![Homepage iteration 2](images/prototype1-v2.png)
+![Homepage iteration 2](assets/images/prototype1-v2.png)
 
 **Homepage:** To increase user freedom and flexibility of selecting different filters, I replaced the individual pill filters with a multi-select interaction, allowing users to filter the book list more easily. I implemented a hover effect where the row background changes to visually indicate that the row is clickable. Additionally, to reduce repetition and streamline the interface, I made the "View" button appear only when the cursor hovers over a row, rather than having it constantly visible.
 
-![Book detail page iteration 2](images/prototype2-v2.png)
+![Book detail page iteration 2](assets/images/prototype2-v2.png)
 
 **Book detail page:** I added links to Goodreads and a local bookstore for each book, providing users with actionable next steps to learn more or purchase the book.
 
@@ -283,7 +287,7 @@ I will use Generative AI as inspiration for how to come up with design solutions
 
 ### *Idea 1: Book Recommendation Quiz*
 
-![Idea 1: Book Recommendation Quiz](images/idea1-sketch.png)
+![Idea 1: Book Recommendation Quiz](assets/images/idea1-sketch.png)
 
 - **What is the basic idea of your final project? (1-2 sentences)**  
   - Take an interactive quiz to get book recommendations based on reviews and notes.
@@ -297,7 +301,7 @@ I will use Generative AI as inspiration for how to come up with design solutions
 
 ### *Idea 2: City Guide*
 
-![Idea 2: Personal City Guide](images/idea2-sketch.png)
+![Idea 2: Personal City Guide](assets/images/idea2-sketch.png)
 
 - **What is the basic idea of your final project? (1-2 sentences)**  
   - Interactive map &  personal city guide to friends and family who are visiting a new city with photos and notes of each recommended local restaurants, experiences, or places to visit.
@@ -312,7 +316,7 @@ I will use Generative AI as inspiration for how to come up with design solutions
 
 ### *Idea 3: Spotify Aura Generator*
 
-![Idea 3: Spotify Aura Generator](images/idea3-sketch.png)
+![Idea 3: Spotify Aura Generator](assets/images/idea3-sketch.png)
 
 - **What is the basic idea of your final project? (1-2 sentences)**  
   - Link your Spotify account to see an aura visualization based on your recent Spotify listening.
